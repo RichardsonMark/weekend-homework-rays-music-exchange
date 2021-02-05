@@ -70,6 +70,6 @@ public class ShopTest {
         shop.addItemsToStock(cymbal);
         shop.addItemsToStock(guitar);
         shop.addItemsToStock(guitarStrings);
-        assertEquals(2000, shop.calculateTotalProfit());
+        assertEquals(454, shop.calculateTotalProfit());
     }
 }
