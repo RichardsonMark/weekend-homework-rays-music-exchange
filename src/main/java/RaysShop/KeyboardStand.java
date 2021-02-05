@@ -2,24 +2,24 @@ package RaysShop;
 
 import Interfaces.ISell;
 
-public class DrumSticks implements ISell {
+public class KeyboardStand implements ISell {
 
-    private String materialType;
+    private String size;
     private int wholesalePrice;
     private int sellingPrice;
 
-    public DrumSticks(String materialType, int wholesalePrice, int sellingPrice) {
-        this.materialType = materialType;
+    public KeyboardStand(String size, int wholesalePrice, int sellingPrice){
+        this.size = size;
         this.wholesalePrice = wholesalePrice;
         this.sellingPrice = sellingPrice;
     }
 
-    public String getMaterialType() {
-        return this.materialType;
+    public String getSize() {
+        return this.size;
     }
 
-    public void setMaterialType(String materialType) {
-        this.materialType = materialType;
+    public void setSize(String size) {
+        this.size = size;
     }
 
     public int getWholesalePrice() {
