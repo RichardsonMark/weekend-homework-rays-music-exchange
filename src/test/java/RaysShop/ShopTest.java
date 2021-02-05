@@ -10,11 +10,18 @@ public class ShopTest {
 
     Shop shop;
     ISell drumsticks;
+    ISell cymbal;
+    ISell guitar;
+    ISell guitarStrings;
+
 
     @Before
     public void setUp() throws Exception {
         shop = new Shop("Ray's Music Shop", 5000);
         drumsticks = new Drumsticks("Wood", 3, 5);
+        cymbal = new Drums("Zildjian Constantinople","Copper", "Ride Cymbal", 20, 350, 550);
+        guitar = new Guitar("Fender KC Jaguar","3-Tone Sunburst", "left handed six string guitar", 6, 1050, 1300);
+        guitarStrings = new GuitarStrings("Nickel", 3, 5);
     }
 
     @Test
@@ -54,5 +61,15 @@ public class ShopTest {
     @Test
     public void canRemoveItemsFromStock(){
         shop.removeItemsFromStock(drumsticks);
+        assertEquals(0, shop.getStock());
+    }
+
+    @Test
+    public void canCalculateTotalProfit(){
+        shop.addItemsToStock(drumsticks);
+        shop.addItemsToStock(cymbal);
+        shop.addItemsToStock(guitar);
+        shop.addItemsToStock(guitarStrings);
+        assertEquals(2000, shop.calculateTotalProfit());
     }
 }

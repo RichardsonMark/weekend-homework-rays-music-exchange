@@ -53,7 +53,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
     }
 
     public String play() {
-        return "No Stairway, denied!";
+        return "No Stairway? Denied!";
     }
 
     public double calculateMarkup() {

@@ -16,7 +16,6 @@ public class GuitarTest {
     public void setUp() {
         guitar = new Guitar("Fender KC Jaguar","3-Tone Sunburst", "left handed six string guitar", 6, 1050, 1300);
         bassGuitar = new Guitar("Fender Player Mustang","Aged Natural", "right handed bass guitar", 4, 450, 650);
-
     }
 
     @Test
@@ -87,7 +86,7 @@ public class GuitarTest {
 
     @Test
     public void canPlay() {
-        assertEquals("No Stairway, denied!", guitar.play());
+        assertEquals("No Stairway? Denied!", guitar.play());
     }
 
     @Test

@@ -13,7 +13,6 @@ public class KeyboardStandTest {
     @Before
     public void canSetUp() {
         keyboardStand = new KeyboardStand("Full-size", 50, 95);
-
     }
 
     @Test

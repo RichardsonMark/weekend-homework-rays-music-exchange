@@ -13,7 +13,6 @@ public class GuitarStringsTest {
     @Before
     public void canSetUp() {
         guitarStrings = new GuitarStrings("Nickel", 3, 5);
-
     }
 
     @Test

@@ -13,7 +13,6 @@ public class DrumsticksTest {
     @Before
     public void canSetUp() {
         drumsticks = new Drumsticks("Wood", 3, 5);
-
     }
 
     @Test
