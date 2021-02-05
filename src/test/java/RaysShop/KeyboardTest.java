@@ -85,8 +85,12 @@ public class KeyboardTest {
     }
 
     @Test
-    public void play() {
+    public void canPlay() {
         assertEquals("Pew pew!", korg.play());
+    }
 
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(50.0, korg.calculateMarkup());
     }
 }

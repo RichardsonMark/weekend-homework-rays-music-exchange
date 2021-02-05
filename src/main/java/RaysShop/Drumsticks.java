@@ -2,13 +2,13 @@ package RaysShop;
 
 import Interfaces.ISell;
 
-public class DrumSticks implements ISell {
+public class Drumsticks implements ISell {
 
     private String materialType;
     private int wholesalePrice;
     private int sellingPrice;
 
-    public DrumSticks(String materialType, int wholesalePrice, int sellingPrice) {
+    public Drumsticks(String materialType, int wholesalePrice, int sellingPrice) {
         this.materialType = materialType;
         this.wholesalePrice = wholesalePrice;
         this.sellingPrice = sellingPrice;
@@ -41,4 +41,5 @@ public class DrumSticks implements ISell {
     public double calculateMarkup() {
         return this.sellingPrice - this.wholesalePrice;
     }
+
 }

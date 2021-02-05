@@ -41,4 +41,5 @@ public class GuitarStrings implements ISell {
     public double calculateMarkup() {
         return this.sellingPrice - this.wholesalePrice;
     }
+
 }

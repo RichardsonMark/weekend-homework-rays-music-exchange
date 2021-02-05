@@ -89,4 +89,9 @@ public class GuitarTest {
     public void canPlay() {
         assertEquals("No Stairway, denied!", guitar.play());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(250.00, guitar.calculateMarkup());
+    }
 }
