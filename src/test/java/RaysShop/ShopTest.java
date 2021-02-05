@@ -1,5 +1,6 @@
 package RaysShop;
 
+import Interfaces.ISell;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +9,7 @@ import static org.junit.Assert.*;
 public class ShopTest {
 
     Shop shop;
-    Drumsticks drumsticks;
+    ISell drumsticks;
 
     @Before
     public void setUp() throws Exception {
@@ -36,5 +37,22 @@ public class ShopTest {
     public void canSetMoneyInTill() {
         shop.setMoneyInTill(500);
         assertEquals(500, shop.getMoneyInTill());
+    }
+
+    @Test
+    public void canGetStock(){
+        assertEquals(0, shop.getStock());
+    }
+
+    @Test
+    public void canAddItemsToStock(){
+        shop.addItemsToStock(drumsticks);
+        assertEquals(1, shop.getStock());
+
+    }
+
+    @Test
+    public void canRemoveItemsFromStock(){
+        shop.removeItemsFromStock(drumsticks);
     }
 }
