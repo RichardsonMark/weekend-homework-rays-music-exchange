@@ -13,32 +13,15 @@ public class Keyboard extends Instrument implements IPlay, ISell {
     private int sellingPrice;
 
     public Keyboard(String model, String colour, String type, int numKeys, int wholesalePrice, int sellingPrice){
-        this.model = model;
-        this.colour = colour;
+        super(model, colour);
         this.type = type;
         this.numKeys = numKeys;
         this.wholesalePrice = wholesalePrice;
         this.sellingPrice = sellingPrice;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public String getColour() {
-        return colour;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
-
     public String getType() {
-        return type;
+        return this.type;
     }
 
     public void setType(String type) {

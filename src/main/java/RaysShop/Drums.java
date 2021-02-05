@@ -5,40 +5,21 @@ import Interfaces.ISell;
 
 public class Drums extends Instrument implements IPlay, ISell{
 
-    private String model;
-    private String colour;
     private String type;
     private int size;
     private int wholesalePrice;
     private int sellingPrice;
 
     public Drums(String model, String colour, String type, int size, int wholesalePrice, int sellingPrice){
-        this.model = model;
-        this.colour = colour;
+        super(model, colour);
         this.type = type;
         this.size = size;
         this.wholesalePrice = wholesalePrice;
         this.sellingPrice = sellingPrice;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public String getColour() {
-        return colour;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
-
     public String getType() {
-        return type;
+        return this.type;
     }
 
     public void setType(String type) {
@@ -46,7 +27,7 @@ public class Drums extends Instrument implements IPlay, ISell{
     }
 
     public int getSize() {
-        return size;
+        return this.size;
     }
 
     public void setSize(int size) {
@@ -54,7 +35,7 @@ public class Drums extends Instrument implements IPlay, ISell{
     }
 
     public int getWholesalePrice() {
-        return wholesalePrice;
+        return this.wholesalePrice;
     }
 
     public void setWholesalePrice(int wholesalePrice) {
@@ -62,7 +43,7 @@ public class Drums extends Instrument implements IPlay, ISell{
     }
 
     public int getSellingPrice() {
-        return sellingPrice;
+        return this.sellingPrice;
     }
 
     public void setSellingPrice(int sellingPrice) {

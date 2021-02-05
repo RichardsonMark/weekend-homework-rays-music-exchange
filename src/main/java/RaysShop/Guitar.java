@@ -13,32 +13,15 @@ public class Guitar extends Instrument implements IPlay, ISell {
     private int sellingPrice;
 
     public Guitar(String model, String colour, String type, int mumStrings, int wholesalePrice, int sellingPrice){
-        this.model = model;
-        this.colour = colour;
+        super(model, colour);
         this.type = type;
         this.mumStrings = mumStrings;
         this.wholesalePrice = wholesalePrice;
         this.sellingPrice = sellingPrice;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public String getColour() {
-        return colour;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
-
     public String getType() {
-        return type;
+        return this.type;
     }
 
     public void setType(String type) {
@@ -46,7 +29,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
     }
 
     public int getMumStrings() {
-        return mumStrings;
+        return this.mumStrings;
     }
 
     public void setMumStrings(int mumStrings) {
@@ -54,7 +37,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
     }
 
     public int getWholesalePrice() {
-        return wholesalePrice;
+        return this.wholesalePrice;
     }
 
     public void setWholesalePrice(int wholesalePrice) {
@@ -62,7 +45,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
     }
 
     public int getSellingPrice() {
-        return sellingPrice;
+        return this.sellingPrice;
     }
 
     public void setSellingPrice(int sellingPrice) {
