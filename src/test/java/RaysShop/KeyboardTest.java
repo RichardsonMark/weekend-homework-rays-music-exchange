@@ -80,8 +80,8 @@ public class KeyboardTest {
 
     @Test
     public void canSetSellingPrice() {
-        korg.setWholesalePrice(275);
-        assertEquals(275, korg.getWholesalePrice());
+        korg.setSellingPrice(275);
+        assertEquals(275, korg.getSellingPrice());
     }
 
     @Test

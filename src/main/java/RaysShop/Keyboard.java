@@ -55,4 +55,8 @@ public class Keyboard extends Instrument implements IPlay, ISell {
     public String play() {
         return "Pew pew!";
     }
+
+    public double calculateMarkup() {
+        return this.sellingPrice - this.wholesalePrice;
+    }
 }

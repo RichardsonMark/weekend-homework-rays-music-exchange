@@ -80,8 +80,8 @@ public class DrumsTest {
 
     @Test
     public void canSetSellingPrice() {
-        bassDrum.setWholesalePrice(275);
-        assertEquals(275, bassDrum.getWholesalePrice());
+        bassDrum.setSellingPrice(275);
+        assertEquals(275, bassDrum.getSellingPrice());
     }
 
     @Test

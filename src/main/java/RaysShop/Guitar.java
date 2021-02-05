@@ -56,4 +56,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
         return "No Stairway, denied!";
     }
 
+    public double calculateMarkup() {
+        return this.sellingPrice - this.wholesalePrice;
+    }
 }

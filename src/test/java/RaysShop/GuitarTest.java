@@ -81,8 +81,8 @@ public class GuitarTest {
 
     @Test
     public void canSetSellingPrice() {
-        guitar.setWholesalePrice(1275);
-        assertEquals(1275, guitar.getWholesalePrice());
+        guitar.setSellingPrice(1275);
+        assertEquals(1275, guitar.getSellingPrice());
     }
 
     @Test

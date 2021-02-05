@@ -54,4 +54,7 @@ public class Drums extends Instrument implements IPlay, ISell{
         return "She bangs the drums";
     }
 
+    public double calculateMarkup() {
+        return this.sellingPrice - this.wholesalePrice;
+    }
 }

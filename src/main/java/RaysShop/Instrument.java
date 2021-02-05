@@ -1,7 +1,7 @@
 package RaysShop;
 
 public abstract class Instrument {
-    
+
     private String model;
     private String colour;
 
